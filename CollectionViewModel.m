@@ -1,6 +1,6 @@
 //
 //  CollectionViewModel.m
-//  SisterPicture按时打算打算打算打算打算打算打算打算打打
+//  SisterPicture
 //
 //  Created by xue on 15/12/13.
 //  Copyright © 2015年 xue. All rights reserved.
