@@ -196,6 +196,6 @@
 -(void)tapStar:(UITapGestureRecognizer *)tap{
     AuthorViewController *author=[AuthorViewController new];
     author.navigationItem.title=@"作者详情";
-    [self.navigationController pushViewController:author animated:YES];
+    [self.navigationController pushViewController:author animated:NO];
 }
 @end
