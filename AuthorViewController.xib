@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorViewController">
@@ -22,8 +22,8 @@
                         <constraint firstAttribute="height" constant="120" id="mPO-S5-Tkc"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信公众号平台二维码：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSy-F3-2sa">
-                    <rect key="frame" x="10" y="638" width="262" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信公众平台:于爽学姐的照相馆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSy-F3-2sa">
+                    <rect key="frame" x="10" y="638" width="365" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="e2s-3H-aqr"/>
                     </constraints>
@@ -31,15 +31,8 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weixin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8ty-Tt-vs4">
-                    <rect key="frame" x="275" y="567" width="100" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="100" id="W5b-Cw-U47"/>
-                        <constraint firstAttribute="width" constant="100" id="xMe-ww-6E2"/>
-                    </constraints>
-                </imageView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="-1" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIz-eL-qK2">
-                    <rect key="frame" x="40" y="220" width="295" height="327"/>
+                    <rect key="frame" x="40" y="220" width="295" height="398"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <string key="text">        于爽,90后资深校园小清新摄影师, 用心生活,脚踏实地的研究生  小师姐.  擅长针对90后学生群体的摄影创作,作品风格时尚,热情,积极阳光, 收获众多粉丝喜爱.大学期间创立 “ 于爽学姐的照相馆 ” 工作室及同名微信公众平台,  在哈尔滨各大高校及哈市摄影圈具有较高的知名度和影响力.</string>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,17 +42,15 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="8ty-Tt-vs4" secondAttribute="trailing" id="0kV-lO-XYA"/>
                 <constraint firstAttribute="trailing" secondItem="iIz-eL-qK2" secondAttribute="trailing" constant="40" id="7ce-da-37M"/>
                 <constraint firstItem="jjW-8X-XL7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="C3d-qv-6XV"/>
                 <constraint firstAttribute="trailing" secondItem="jjW-8X-XL7" secondAttribute="trailing" constant="100" id="HkM-oT-re8"/>
+                <constraint firstAttribute="trailing" secondItem="fSy-F3-2sa" secondAttribute="trailing" id="Lqd-dA-Cte"/>
+                <constraint firstItem="fSy-F3-2sa" firstAttribute="top" secondItem="iIz-eL-qK2" secondAttribute="bottom" constant="20" id="OrB-h3-oQF"/>
                 <constraint firstAttribute="bottom" secondItem="fSy-F3-2sa" secondAttribute="bottom" constant="8" id="UUB-pa-aG5"/>
                 <constraint firstItem="iIz-eL-qK2" firstAttribute="top" secondItem="jjW-8X-XL7" secondAttribute="bottom" constant="20" id="bTM-Pq-F1d"/>
-                <constraint firstAttribute="bottom" secondItem="8ty-Tt-vs4" secondAttribute="bottom" id="byJ-da-cBe"/>
                 <constraint firstItem="jjW-8X-XL7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="dQL-FM-QI5"/>
                 <constraint firstItem="iIz-eL-qK2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="eWi-fv-lf5"/>
-                <constraint firstItem="8ty-Tt-vs4" firstAttribute="top" secondItem="iIz-eL-qK2" secondAttribute="bottom" constant="20" id="hA2-Cq-PQL"/>
-                <constraint firstItem="8ty-Tt-vs4" firstAttribute="leading" secondItem="fSy-F3-2sa" secondAttribute="trailing" constant="3" id="pyd-qB-EVd"/>
                 <constraint firstItem="fSy-F3-2sa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="vSw-Iz-Kdt"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -68,6 +59,5 @@
     </objects>
     <resources>
         <image name="mmexport1449619083488.jpg" width="1280" height="1280"/>
-        <image name="weixin.jpg" width="430" height="430"/>
     </resources>
 </document>

@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor=[[UIColor whiteColor]colorWithAlphaComponent:0.6];
+    self.view.backgroundColor=[UIColor grayColor];
     self.midText.backgroundColor=[[UIColor blackColor]colorWithAlphaComponent:0.01];
     //NSLog(@"%@",[UIFont familyNames]);
     self.midText.font=[UIFont fontWithName:@"Bradley Hand" size:15];
