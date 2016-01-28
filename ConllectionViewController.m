@@ -9,7 +9,16 @@
 #import "ConllectionViewController.h"
 #import "CollectionViewModel.h"
 #import "PicDetailViewController.h"
+#import "CollectionViewCell.h"
+#import "XDwater.h"
+#define SCreenWidth  [UIScreen mainScreen].bounds.size.width
+#define SCreenHeight [UIScreen mainScreen].bounds.size.height
+
 @interface ConllectionViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+{
+   
+    NSMutableArray *_arrHeight;
+}
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property(nonatomic,strong)NSArray *collectionData;
 @end
@@ -18,13 +27,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _arrHeight=[[NSMutableArray alloc]init];
     self.navigationItem.title=@"相册";
     CollectionViewModel *model=[CollectionViewModel new];
     self.collectionData=model.picData[self.dataIndex];
     // Do any additional setup after loading the view from its nib.
+     XDwater * flowLayout = [[XDwater alloc]init];
+    self.collectionView.collectionViewLayout=flowLayout;
     self.collectionView.delegate=self;
     self.collectionView.dataSource=self;
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"xd"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"xd"];
 #pragma mark 添加返回按钮
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 0, 64, 44);
@@ -35,18 +47,15 @@
     self.navigationItem.leftBarButtonItem = backItem;
 
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 #pragma mark collectionView 部分
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"xd" forIndexPath:indexPath];
-    UIImageView *image=[[UIImageView alloc]initWithFrame:cell.contentView.frame];
-    image.userInteractionEnabled=YES;
-    image.image=[UIImage imageNamed:self.collectionData[indexPath.row]];
-    [cell.contentView addSubview:image];
+    CollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"xd" forIndexPath:indexPath];
+    cell.image.userInteractionEnabled=YES;
+    cell.image.image=[UIImage imageNamed:self.collectionData[indexPath.row]];
     return cell;
 }
 /**
@@ -67,11 +76,14 @@
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return  self.collectionData.count;
 }
--(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(10, 10, 10, 20);
-}
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(collectionView.bounds.size.width/2-30, 100);
+    UIImage *image=[UIImage imageNamed:self.collectionData[indexPath.row]];
+//    [_arrHeight addObject:@((image.size.height*(collectionView.bounds.size.width/2.0))/image.size.width)];
+    return CGSizeMake(SCreenWidth/2.0,(image.size.height*(collectionView.bounds.size.width/2.0))/image.size.width);
+}
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(2,2,2,2);
 }
 /**
  *  返回按钮事件

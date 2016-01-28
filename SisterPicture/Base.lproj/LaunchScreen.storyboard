@@ -1,46 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="starview.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PAO-3A-7d1">
-                                <rect key="frame" x="-4" y="-20" width="383" height="687"/>
-                            </imageView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="PAO-3A-7d1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-20" id="R9R-WN-5D4"/>
-                            <constraint firstItem="PAO-3A-7d1" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="VPX-i1-GW0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PAO-3A-7d1" secondAttribute="trailing" constant="-20" id="WHC-aZ-H2g"/>
-                            <constraint firstItem="PAO-3A-7d1" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="h5l-iK-kG5"/>
-                            <constraint firstItem="PAO-3A-7d1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="n1e-C8-6e2"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="PAO-3A-7d1" secondAttribute="bottom" id="nv5-uP-YKg"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="R9R-WN-5D4"/>
-                                <exclude reference="WHC-aZ-H2g"/>
-                                <exclude reference="n1e-C8-6e2"/>
-                                <exclude reference="nv5-uP-YKg"/>
-                            </mask>
-                        </variation>
-                    </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -48,7 +16,4 @@
             <point key="canvasLocation" x="46.5" y="375.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="starview.jpg" width="854" height="1280"/>
-    </resources>
 </document>

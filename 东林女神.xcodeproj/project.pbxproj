@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5487ADD41C59D61F0044813F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487ADD21C59D61F0044813F /* CollectionViewCell.m */; };
+		5487ADD51C59D61F0044813F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5487ADD31C59D61F0044813F /* CollectionViewCell.xib */; };
+		54B00CD61C5A0DC50093F821 /* XDwater.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B00CD51C5A0DC50093F821 /* XDwater.m */; };
 		8557223C1C1EF3C3002A661D /* AuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8557223A1C1EF3C3002A661D /* AuthorViewController.m */; };
 		8557223D1C1EF3C3002A661D /* AuthorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8557223B1C1EF3C3002A661D /* AuthorViewController.xib */; };
 		857CC4431C1BDFF30069663C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 857CC4421C1BDFF30069663C /* main.m */; };
@@ -120,6 +123,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5487ADD11C59D61F0044813F /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		5487ADD21C59D61F0044813F /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		5487ADD31C59D61F0044813F /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		54B00CD41C5A0DC50093F821 /* XDwater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDwater.h; sourceTree = "<group>"; };
+		54B00CD51C5A0DC50093F821 /* XDwater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDwater.m; sourceTree = "<group>"; };
 		855722391C1EF3C3002A661D /* AuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorViewController.h; sourceTree = "<group>"; };
 		8557223A1C1EF3C3002A661D /* AuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorViewController.m; sourceTree = "<group>"; };
 		8557223B1C1EF3C3002A661D /* AuthorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorViewController.xib; sourceTree = "<group>"; };
@@ -520,6 +528,11 @@
 				85E36AD21C1D55A600B18647 /* ConllectionViewController.h */,
 				85E36AD31C1D55A600B18647 /* ConllectionViewController.m */,
 				85E36AD41C1D55A600B18647 /* ConllectionViewController.xib */,
+				5487ADD11C59D61F0044813F /* CollectionViewCell.h */,
+				5487ADD21C59D61F0044813F /* CollectionViewCell.m */,
+				5487ADD31C59D61F0044813F /* CollectionViewCell.xib */,
+				54B00CD41C5A0DC50093F821 /* XDwater.h */,
+				54B00CD51C5A0DC50093F821 /* XDwater.m */,
 			);
 			name = CollectionVIew;
 			sourceTree = "<group>";
@@ -687,6 +700,7 @@
 				857CC58C1C1C60780069663C /* 3_4.jpg in Resources */,
 				857CC5AE1C1C60780069663C /* 6_7.jpg in Resources */,
 				857CC5831C1C60780069663C /* 7_4.jpg in Resources */,
+				5487ADD51C59D61F0044813F /* CollectionViewCell.xib in Resources */,
 				857CC5871C1C60780069663C /* 7_8.jpg in Resources */,
 				857CC5891C1C60780069663C /* 3_1.jpg in Resources */,
 				857CC58E1C1C60780069663C /* 3_6.jpg in Resources */,
@@ -747,6 +761,8 @@
 				85E36B621C1DC88700B18647 /* PicDetailViewController.m in Sources */,
 				857CC50E1C1C5E7C0069663C /* IndexModel.m in Sources */,
 				857CC4491C1BDFF30069663C /* ViewController.m in Sources */,
+				54B00CD61C5A0DC50093F821 /* XDwater.m in Sources */,
+				5487ADD41C59D61F0044813F /* CollectionViewCell.m in Sources */,
 				8557223C1C1EF3C3002A661D /* AuthorViewController.m in Sources */,
 				85E36B5E1C1DC34400B18647 /* CollectionViewModel.m in Sources */,
 				857CC4461C1BDFF30069663C /* AppDelegate.m in Sources */,
@@ -894,14 +910,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Pengfei Yang (38M7XBGGPE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pengfei Yang (38M7XBGGPE)";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SisterPicture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xd.donglingirl;
 				PRODUCT_NAME = "东林女神";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b590e069-111f-4084-a869-7e63c1ac0651";
 			};
 			name = Debug;
 		};
@@ -909,14 +927,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Pengfei Yang (38M7XBGGPE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pengfei Yang (38M7XBGGPE)";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SisterPicture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xd.donglingirl;
 				PRODUCT_NAME = "东林女神";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b590e069-111f-4084-a869-7e63c1ac0651";
 			};
 			name = Release;
 		};
