@@ -1,7 +1,7 @@
 //
 //  IndexModel.h
 //  SisterPicture
-//
+//测试是否pull更新分支
 //  Created by xue on 15/12/12.
 //  Copyright © 2015年 xue. All rights reserved.
 //
